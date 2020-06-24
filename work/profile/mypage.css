@@ -1,0 +1,30 @@
+main{
+  /* text-align: center; */
+}
+
+h1{
+  font-size: 24px;
+  margin: 24px 0 36px;
+}
+
+h2{
+  margin-bottom: 4px;
+}
+
+p{
+  margin: 0;
+}
+
+#profile_image_frame{
+  width: 100px;
+  height: 100px;
+  /* margin: 0 auto; */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: chartreuse;
+}
+
+#profile_image_frame>img{
+  height: 100%;
+}

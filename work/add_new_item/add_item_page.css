@@ -1,0 +1,16 @@
+.add_new_item_section{
+  width: 200px;
+  margin-bottom: 24px;
+}
+
+#shop>ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: 426px){
+  .add_new_item_section{
+    min-width: 240px;
+  }
+}

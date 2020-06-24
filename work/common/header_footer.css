@@ -1,0 +1,67 @@
+
+/* common */
+header, footer{
+  background-color: #00e8da;  
+}
+
+/* header */
+header{
+  height: 72px;
+  position: relative;
+}
+
+header h1{
+  margin: 0;
+  text-align: center;
+  line-height: 72px;
+  font-weight: normal;
+  font-size: 24px;
+}
+
+#app_title>a{
+  color: #fff;
+}
+
+.fa-id-card{
+  font-size: 20px;
+  color: #fff;
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 24px;
+}
+
+.fa-id-card:hover{
+  user-select: none;
+  cursor: pointer;
+}
+
+
+.logout{
+  font-size: 16px;
+  height: 24px;
+  position: absolute;
+  top: calc(50% - 12px);
+  right: 24px;
+}
+
+.logout>a{
+  vertical-align: middle;
+  text-decoration: none;
+  color: #fff;
+}
+
+.logout>a:hover{
+  text-decoration: underline;
+}
+
+
+/* footer */
+footer{
+  text-align: center;
+}
+
+footer>p{
+  margin: 0;
+  color: #fff;
+  user-select: none;
+}
