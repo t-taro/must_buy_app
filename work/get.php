@@ -1,5 +1,7 @@
 <?php
-  session_start();
+  if(!isset($_SESSION)){
+    session_start();
+  }
   
   try {
     $dsn = "mysql:host=must_buy_mysql;dbname=must_buy_app_db;";

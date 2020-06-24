@@ -1,5 +1,7 @@
 <?php
-  session_start();
+  if(!isset($_SESSION)){
+    session_start();
+  }
   
   // 既にログイン後の場合はログイン後の画面へ遷移する
   if (isset($_SESSION['email'])){

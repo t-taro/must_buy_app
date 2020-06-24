@@ -1,5 +1,8 @@
 <?php
-  session_start();
+  if(!isset($_SESSION)){
+    session_start();
+  }
+  
   require_once('../get.php');
   
   if (!isset($_SESSION['email'])){
@@ -30,8 +33,14 @@
 <body>
   <div class="container">
     <?php include('../common/header.php') ?>
-    <main> 
-      <p><?= $successMessage ?></p>
+    <main>
+      <p>
+      <?php
+       if (isset($successMessage)){
+         echo $successMessage;
+       }
+      ?>
+      </p>
       <form action="add_new_item.php" method="post">
         <section id="name" class="flex_column add_new_item_section">
           <label for="new_item">Item</label>
